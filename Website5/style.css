@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Transflower Theme ===== */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bs-primary: #e91e63;
+  --bs-secondary: #4caf50;
+  --bs-warning: #ffeb3b;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  background-color: var(--bs-primary) !important;
+  height: 50px;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--bs-warning) !important;
+}
+
+/* ---------------- BUTTONS ---------------- */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+/* ---------------- CAROUSEL ---------------- */
+/* Carousel Images = HALF PAGE HEIGHT */
+.carousel-img {
+  width: 100%;
+  height: 100vh;        /* half of the page height */
+  object-fit: cover;   /* crop nicely without stretching */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 35vh;      /* smaller height for mobile */
+  }
+}
+
+/* ---------------- FORM ---------------- */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* .custom-footer {
+  background-color: #6f1ee9;
+  color: rgb(255, 255, 255);
+} */
+
+footer{
+    background-color: var(--bs-primary) !important;
+}
+
+/* ========================================
+      FIXED SAME SIZE PRODUCT CARDS
+======================================== */
+
+.card {
+  height: 470px;                 /* SAME height for all cards */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+/* SAME IMAGE SIZE */
+.card-img-top {
+  width: 150%;
+  height: 300px;        /* FIXED same height */
+  object-fit: cover;    /* crop image nicely */
+  object-position: center;
+}
+
+/* Card Body */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  min-height: 40px;      /* keeps text aligned */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+/* hero image */
+.hero-img {
+  width: 400px;      /* adjust size */
+  height: auto;      /* keeps natural ratio */
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* hero sections background color */
+.hero-section {
+  background-color:pink;  /* light pink background */
+  padding: 60px 0;            /* space inside section */
+}
+/* buttons size small */
+.btn-small {
+  padding: 5px 12px;     /* smaller height and width */
+  font-size: 12px;       /* smaller text */
+  border-radius: 6px;    /* optional */
+}
+
+
+
