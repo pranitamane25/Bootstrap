@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transflower Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+
+  <style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🌸 Transflower Store</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+            <li><a class="dropdown-item" href="clothing.html">Clothing</a></li>
+            <li><a class="dropdown-item" href="homeDecor.html">Home Decor</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+      </ul>
+    </div>
+
+    <form class="d-flex ms-3">
+      <input class="form-control" type="search" placeholder="Search products...">
+    </form>
+  </div>
+</nav>
+
+<!-- PRODUCT LIST -->
+<div class="container py-5">
+  <h2 class="text-center mb-4 text-primary">Home Decor</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Product Card Template -->
+    <!-- PRODUCT 1 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/colorchart13.jpg" class="card-img-top" alt="Colour Chart">
+        <div class="card-body text-center">
+          <h5 class="card-title">Colour Chart</h5>
+          <p class="fw-bold">₹1999</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Colour Chart"
+            data-price="1999"
+            data-image="images/colorchart13.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/woodenwall14.jpg" class="card-img-top" alt="Wooden Wall">
+        <div class="card-body text-center">
+          <h5 class="card-title">Wooden Wall</h5>
+          <p class="fw-bold">₹1299</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Wooden Wall"
+            data-price="1299"
+            data-image="images/woodenwall14.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/livingroom14.jpg" class="card-img-top" alt="Living Room">
+        <div class="card-body text-center">
+          <h5 class="card-title">Living Room Decoration</h5>
+          <p class="fw-bold">₹1650</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Living Room Decoration"
+            data-price="1650"
+            data-image="images/livingroom14.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/treewall14.jpg" class="card-img-top" alt="Tree Wall Decor">
+        <div class="card-body text-center">
+          <h5 class="card-title">Tree Wall Decor</h5>
+          <p class="fw-bold">₹3999</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Tree Wall Decor"
+            data-price="3999"
+            data-image="images/treewall14.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT 5 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/papercraft14.jpg" class="card-img-top" alt="Paper Craft">
+        <div class="card-body text-center">
+          <h5 class="card-title">Paper Craft Decor</h5>
+          <p class="fw-bold">₹999</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Paper Craft Decor"
+            data-price="999"
+            data-image="images/papercraft14.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT 6 -->
+    <div class="col">
+      <div class="card h-100 shadow">
+        <img src="images/starecase14.jpg" class="card-img-top" alt="Staircase Decor">
+        <div class="card-body text-center">
+          <h5 class="card-title">Staircase Decoration</h5>
+          <p class="fw-bold">₹2999</p>
+          <button class="btn btn-primary add-cart"
+            data-name="Staircase Decoration"
+            data-price="2999"
+            data-image="images/starecase14.jpg">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-3 mt-5">
+  <small>© 2025 Transflower Store. All Rights Reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ADD TO CART SCRIPT -->
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  document.querySelectorAll(".add-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const product = {
+        name: btn.dataset.name,
+        price: parseInt(btn.dataset.price),
+        image: btn.dataset.image,
+        qty: 1
+      };
+
+      cart.push(product);
+      localStorage.setItem("cart", JSON.stringify(cart));
+
+      alert(product.name + " added to cart!");
+    });
+  });
+</script>
+
+</body>
+</html>

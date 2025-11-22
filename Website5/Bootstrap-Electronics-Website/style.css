@@ -1,0 +1,104 @@
+/* ------------------ Body ------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ------------------ Navbar ------------------ */
+.navbar {
+  background-color: rgb(178, 38, 113);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+/* ------------------ Footer ------------------ */
+footer {
+  background-color: rgb(178, 38, 113);
+  color: white;
+  font-size: 0.99rem;
+  margin-top: auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* ------------------ Card ------------------ */
+.card {
+  width: 20rem;
+  height: auto;
+  padding-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* ------------------ Card Image ------------------ */
+.card-img-top {
+  height: 260px;
+  object-fit: cover;
+}
+
+/* ------------------ Hero Section ------------------ */
+.hero-Section {
+  background-color: rgb(109, 163, 125);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+/* ------------------ Buttons ------------------ */
+.btn-primary {
+  background-color: rgb(178, 38, 113) !important;
+  border-color: white !important;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(178, 38, 113) !important;
+}
+
+.shop-btn {
+  background-color: rgb(178, 38, 113);
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.shop-btn:hover {
+  background-color: rgb(178, 38, 113);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ------------------ Cart Section ------------------ */
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.qty-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* footer color change */
+footer {
+  background-color: rgb(178, 38, 113);
+  color: white;
+  font-size: 0.99rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;  /* ensures footer stays at bottom if content is short */
+}

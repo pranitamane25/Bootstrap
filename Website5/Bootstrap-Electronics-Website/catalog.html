@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transflower Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+
+  <style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card {
+      height: 100%;
+    }
+    nav{
+      background-color:#343a40;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🌸 Transflower Store</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="clothing.html">Clothing</a></li>
+              <li><a class="dropdown-item" href="homeDecor.html">Home Decor</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        </ul>
+      </div>
+
+      <form class="d-flex ms-3">
+        <input class="form-control me-2" type="search" placeholder="Search products">
+      </form>
+    </div>
+  </nav>
+
+
+  <!-- Product Catalog -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4 text-primary">Popular Products</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Product 1 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/smartphone111.jpg" class="card-img-top" alt="Phone">
+          <div class="card-body text-center">
+            <h5 class="card-title">Smartphone</h5>
+            <p class="fw-bold">₹20000</p>
+            <p>Latest Android model with AI camera.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Smartphone',20000,'images/smartphone111.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/smartwatch11.jpg" class="card-img-top" alt="Watch">
+          <div class="card-body text-center">
+            <h5 class="card-title">Smart Watch</h5>
+            <p class="fw-bold">₹2000</p>
+            <p>Fitness tracking with heart-rate monitor.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Smart Watch',2000,'images/smartwatch11.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/laptop11.jpg" class="card-img-top" alt="Laptop">
+          <div class="card-body text-center">
+            <h5 class="card-title">Laptop</h5>
+            <p class="fw-bold">₹50000</p>
+            <p>High performance for work and gaming.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Laptop',50000,'images/laptop11.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/iron11.jpg" class="card-img-top" alt="Iron">
+          <div class="card-body text-center">
+            <h5 class="card-title">Iron</h5>
+            <p class="fw-bold">₹500</p>
+            <p>Press clothes efficiently with modern design.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Iron',500,'images/iron11.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/oven11.jpg" class="card-img-top" alt="Oven">
+          <div class="card-body text-center">
+            <h5 class="card-title">Oven</h5>
+            <p class="fw-bold">₹5000</p>
+            <p>Heats food quickly.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Oven',5000,'images/oven11.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/fridge11.jpg" class="card-img-top" alt="Fridge">
+          <div class="card-body text-center">
+            <h5 class="card-title">Refrigerator</h5>
+            <p class="fw-bold">₹15000</p>
+            <p>Keeps your food fresh and cool.</p>
+
+            <button class="btn btn-primary"
+              onclick="addToCart('Refrigerator',15000,'images/fridge11.jpg')">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3 mt-5">
+    <small>© 2025 Transflower Store. All Rights Reserved.</small>
+  </footer>
+
+  <!-- ADD TO CART SCRIPT -->
+  <script>
+    function addToCart(name, price, image) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      let exists = cart.find(p => p.name === name);
+
+      if (exists) {
+        exists.qty++;
+      } else {
+        cart.push({
+          name: name,
+          price: price,
+          image: image,
+          qty: 1
+        });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      window.location.href = "cart.html";
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

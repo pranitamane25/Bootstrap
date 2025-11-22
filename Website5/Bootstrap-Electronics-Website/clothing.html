@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transflower Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+  
+  <style>
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .card {
+      height: 100%;
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">🌸 Transflower Store</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+            <li><a class="dropdown-item" href="clothing.html">Clothing</a></li>
+            <li><a class="dropdown-item" href="homeDecor.html">Home Decore</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+
+      </ul>
+    </div>
+
+    <form class="d-flex ms-3">
+      <input class="form-control" type="search" placeholder="Search products...">
+    </form>
+
+  </div>
+</nav>
+
+
+
+<!-- Product Catalog -->
+<div class="container py-5">
+  <h2 class="text-center mb-4 text-primary">Fashion clothes</h2>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Product 1 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/onepiece13.jpg" class="card-img-top h-100" alt="Mouse">
+          <div class="card-body text-center">
+            <h5 class="card-title">One Piece</h5>
+            <p class="fw-bold">₹2000</p>
+            <p>Party Wear dress</p>
+            <button class="btn btn-primary" onclick="addToCart('One Piece',2000,'images/onepiece13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/baggy13.jpg" class="card-img-top h-100" alt="Earbuds">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baggy Jeans</h5>
+            <p class="fw-bold">₹2000</p>
+            <p>Straight fit high rise fit</p>
+            <button class="btn btn-primary" onclick="addToCart('Baggy Jeans',2000,'images/baggy13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/ethnic13.jpg" class="card-img-top h-100" alt="Kettle">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ethnic wear</h5>
+            <p class="fw-bold">₹5000</p>
+            <p>Shop Best Ethnic Wear</p>
+            <button class="btn btn-primary" onclick="addToCart('Ethnic wear',5000,'images/ethnic13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/western13.jpg" class="card-img-top h-100" alt="Iron">
+          <div class="card-body text-center">
+            <h5 class="card-title">Western Outfits</h5>
+            <p class="fw-bold">₹2000</p>
+            <p>latest Indo Western.</p>
+            <button class="btn btn-primary" onclick="addToCart('Western Outfits',2000,'images/western13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/saree13.jpg" class="card-img-top h-100" alt="Water Heater">
+          <div class="card-body text-center">
+            <h5 class="card-title">Silk Saree</h5>
+            <p class="fw-bold">₹10000</p>
+            <p>Yellow Silk design saree</p>
+            <button class="btn btn-primary" onclick="addToCart('Silk Saree',10000,'images/saree13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col">
+        <div class="card h-100 shadow">
+          <img src="images/brahmani13.jpg" class="card-img-top h-100" alt="Smart TV">
+          <div class="card-body text-center">
+            <h5 class="card-title">Brahmani Nauwari Saree</h5>
+            <p class="fw-bold">₹20000</p>
+            <p>Dream Wedding Saree</p>
+            <button class="btn btn-primary" onclick="addToCart('Brahmani Nauwari Saree',20000,'images/brahmani13.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+<footer class="text-white text-center py-3 mt-5">
+  <small>© 2025 Transflower Store. All Rights Reserved.</small>
+</footer>
+
+
+<!-- ADD TO CART LOGIC -->
+<script>
+function addToCart(name, price, image) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let exists = cart.find(p => p.name === name);
+
+  if (exists) {
+    exists.qty++;
+  } else {
+    cart.push({
+      name: name,
+      price: price,
+      image: image,
+      qty: 1
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.href = "cart.html";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
